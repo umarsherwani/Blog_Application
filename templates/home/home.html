@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %} 
+{% block homeactive %} active {% endblock homeactive %}
+{% block body %} 
+<div class="container">
+<div class="jumbotron my-3">
+  <h1 class="display-4">Welcome to CodeBlog!</h1>
+  <p class="lead">If we wish to count lines of code, we should not regard them as ‘lines produced’ but as ‘lines spent.’</p>
+  <hr class="my-4">
+  <p>Let's go and explore our fantastic Blogs.</p>
+  <a class="btn btn-primary btn-lg" href="/blog" role="button">Go to Blog</a>
+  </div>
+</div>
+
+
+<div class="container">
+<h2>Popular Blogposts</h2>
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 my-4 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">Featured post</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <div>
+          <a class="btn btn-primary my-2" href="/blog" role="button"> continue reading</a>
+          </div>
+        </div>
+   <div class="col-auto d-none d-lg-block">
+      
+        </div>     
+      </div>
+      </div>
+{% endblock body %}
